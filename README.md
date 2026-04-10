@@ -16,9 +16,3 @@ A simple Dockerized web server that serves images from a mounted volume.
    docker run -v $(pwd)/images:/images -p 5000:5000 image-server
    ```
 4. Access images via: `http://localhost:5000/your-image.jpg`
-
-## Usage
-
-- Place image files in the `images/` directory on your host machine.
-- The server will serve any file requested at the root path.
-- If the file doesn't exist, it returns a 404 error.
