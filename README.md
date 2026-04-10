@@ -16,3 +16,7 @@ A simple Dockerized web server that serves images from a mounted volume.
    docker run -v $(pwd)/images:/images -p 5000:5000 image-server
    ```
 4. Access images via: `http://localhost:5000/your-image.jpg`
+
+## Production Deployment
+
+The container uses Gunicorn as a production WSGI server instead of Flask's development server, making it suitable for production use.
